@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Explore Section */
+.explore-section {
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.explore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.explore-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #e50914;
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+/* Explore Grid */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Explore Card */
+.explore-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.explore-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.explore-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.explore-card:hover .explore-image img {
+    transform: scale(1.1);
+}
+
+/* Explore Info */
+.explore-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.explore-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.explore-info p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

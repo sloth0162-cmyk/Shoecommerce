@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Shoes Collection Section */
+.shoes-collection-section {
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.shoes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shoes-collection-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #e50914;
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+/* Shoes Grid */
+.shoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Shoe Card */
+.shoe-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.shoe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.shoe-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.shoe-card:hover .shoe-image img {
+    transform: scale(1.1);
+}
+
+/* Shoe Info */
+.shoe-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.shoe-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.shoe-info p {
+    font-size: 18px;
+    color: #e50914;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

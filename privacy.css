@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Privacy Policy Section */
+.privacy-policy-section {
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    text-align: left;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.privacy-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.privacy-policy-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #e50914;
+    text-align: center;
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+.privacy-content h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #e50914;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.privacy-content p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+    margin-top: 15px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
